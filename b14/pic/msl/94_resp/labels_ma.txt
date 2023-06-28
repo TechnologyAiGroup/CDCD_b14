@@ -1,0 +1,7 @@
+msl-94_resp_1.bmp 0.09090909090909091
+msl-94_resp_2.bmp 0.09090909090909091
+msl-94_resp_3.bmp 0.7333333333333333
+msl-94_resp_4.bmp 1.0
+msl-94_resp_5.bmp 1.0
+msl-94_resp_6.bmp 1.0
+msl-94_resp_all.bmp 1

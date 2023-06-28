@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/49_fail/3.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 4 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/49_fail/3.fail
+ #failing_pat=4, #failures=4, #defects=1, #faults=5, CPU_time=0.04
+ Simulated : #failing_pat=4, #passing_pat=13, #failures=4
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=4, #passing_pat=13, #failures=4
+ ------------------------------------------------------------------------------
+ match=57.14%, #explained patterns: <failing=4, passing=8>
+ sa0   DS   g_U5006/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=57.14%, #explained patterns: <failing=4, passing=8>
+ sa0   DS   g_U5007/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=57.14%, #explained patterns: <failing=4, passing=8>
+ sa0   DS   g_U5009/A2   (NAND3_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=57.14%, #explained patterns: <failing=4, passing=8>
+ sa0   DS   g_U5009/A3   (NAND3_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=57.14%, #explained patterns: <failing=4, passing=8>
+ sa0   DS   g_U5009/A1   (NAND3_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/49_stil/30.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/49_stil/30.stil with 0 errors.
+ End reading 122 patterns, CPU_time = 0.03 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/49_fail/30.diag

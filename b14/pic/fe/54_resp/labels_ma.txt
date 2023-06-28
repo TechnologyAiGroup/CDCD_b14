@@ -1,0 +1,2 @@
+fe-54_resp_1.bmp 0.6666666666666666
+fe-54_resp_all.bmp 1

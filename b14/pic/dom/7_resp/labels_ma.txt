@@ -1,0 +1,3 @@
+dom-7_resp_1.bmp 0.8
+dom-7_resp_2.bmp 1.0
+dom-7_resp_all.bmp 1

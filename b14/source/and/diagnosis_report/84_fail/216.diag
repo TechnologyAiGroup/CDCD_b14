@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/84_fail/216.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 217 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/84_fail/216.fail
+ #failing_pat=217, #failures=217, #defects=1, #faults=2, CPU_time=0.46
+ Simulated : #failing_pat=217, #passing_pat=96, #failures=217
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=217, #passing_pat=96, #failures=217
+ ------------------------------------------------------------------------------
+ match=79.78%, #explained patterns: <failing=217, passing=41>
+ sa1   DS   g_R1162_U57/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U57/A2   (NAND2_X1)
+ sa0   --   g_R1162_U57/A1   (NAND2_X1)
+ sa0   --   g_R1162_U192/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U193/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=69.33%, #explained patterns: <failing=217, passing=0>
+ sa1   DS   U3246   (_PO)
+ sa1   --   g_U3246/ZN   (NAND2_X1)
+ sa0   --   g_U3246/A2   (NAND2_X1)
+ sa0   --   g_U3246/A1   (NAND2_X1)
+ sa0   --   g_U3875/ZN   (AND3_X1)
+ sa0   --   g_U3875/A2   (AND3_X1)
+ sa0   --   g_U3875/A1   (AND3_X1)
+ sa0   --   g_U3875/A3   (AND3_X1)
+ sa0   --   g_U3876/ZN   (AND3_X1)
+ sa0   --   g_U3876/A2   (AND3_X1)
+ sa0   --   g_U3876/A3   (AND3_X1)
+ sa0   --   g_U3876/A1   (AND3_X1)
+ sa0   --   g_U5072/ZN   (NAND2_X1)
+ sa0   --   g_U5071/ZN   (NAND2_X1)
+ sa0   --   g_U5070/ZN   (NAND2_X1)
+ sa0   --   g_U5073/ZN   (NAND2_X1)
+ sa0   --   g_U5075/ZN   (NAND2_X1)
+ sa0   --   g_U5074/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/84_stil/217.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/84_stil/217.stil with 0 errors.
+ End reading 1590 patterns, CPU_time = 0.34 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/84_fail/217.diag

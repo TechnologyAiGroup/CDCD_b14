@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/5_fail/131.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 132 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/5_fail/131.fail
+ #failing_pat=132, #failures=132, #defects=1, #faults=8, CPU_time=0.22
+ Simulated : #failing_pat=132, #passing_pat=96, #failures=132
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=132, #passing_pat=96, #failures=132
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=132, passing=96>
+ sa01   DS   g_U4742/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=132, passing=96>
+ sa01   DS   g_U3771/ZN   (AND2_X1)
+ sa01   --   g_U3772/A3   (AND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=132, passing=96>
+ sa01   DS   g_U3413/ZN   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=132, passing=96>
+ sa01   DS   g_U4742/ZN   (NAND2_X1)
+ sa01   --   g_U3771/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=132, passing=96>
+ sa01   DS   g_U3772/ZN   (AND3_X1)
+ sa01   --   g_U3413/A4   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=98.48%, #explained patterns: <failing=130, passing=96>
+ sa1   DS   g_U4739/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=98.48%, #explained patterns: <failing=130, passing=96>
+ sa1   DS   g_U4743/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=98.48%, #explained patterns: <failing=130, passing=96>
+ sa1   DS   g_U4740/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/5_stil/132.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/5_stil/132.stil with 0 errors.
+ End reading 1225 patterns, CPU_time = 0.27 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/5_fail/132.diag

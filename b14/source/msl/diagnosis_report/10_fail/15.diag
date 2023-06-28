@@ -1,0 +1,58 @@
+run_diagnosis ./tmax_fail/10_fail/15.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 16 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/10_fail/15.fail
+ #failing_pat=16, #failures=16, #defects=1, #faults=14, CPU_time=2.04
+ Simulated : #failing_pat=16, #passing_pat=96, #failures=16
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=14, #failing_pat=16, #passing_pat=96, #failures=16
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U163/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U164/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_U5138/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U114/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U21/A1   (AND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U90/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U221/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U218/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U217/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U216_tmp/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U210/A2   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U199/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U198/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1375_U195/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/10_stil/16.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ Warning: Rule V16 (miscounted arguments) was violated 685 times.
+ End parsing STIL file ./stil/10_stil/16.stil with 0 errors.
+ End reading 685 patterns, CPU_time = 0.14 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/10_fail/16.diag

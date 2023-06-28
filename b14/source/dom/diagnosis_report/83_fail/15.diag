@@ -1,0 +1,112 @@
+run_diagnosis ./tmax_fail/83_fail/15.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 16 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/83_fail/15.fail
+ #failing_pat=16, #failures=16, #defects=1, #faults=19, CPU_time=1.42
+ Simulated : #failing_pat=16, #passing_pat=96, #failures=16
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=19, #failing_pat=16, #passing_pat=96, #failures=16
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U141/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U139/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U139/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U138/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U138/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U134/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U134/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U76/ZN   (AND2_X1)
+ sa1   --   g_R1347_U182/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U76/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U77/ZN   (AND2_X1)
+ sa1   --   g_R1347_U183/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U77/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U11/ZN   (AND3_X1)
+ sa0   --   g_R1347_U11/A1   (AND3_X1)
+ sa0   --   g_R1347_U11/A3   (AND3_X1)
+ sa0   --   g_R1347_U11/A2   (AND3_X1)
+ sa0   --   g_R1347_U78/ZN   (AND2_X1)
+ sa0   --   g_R1347_U78/A1   (AND2_X1)
+ sa0   --   g_R1347_U78/A2   (AND2_X1)
+ sa0   --   g_R1347_U79/ZN   (AND2_X1)
+ sa0   --   g_R1347_U79/A1   (AND2_X1)
+ sa0   --   g_R1347_U79/A2   (AND2_X1)
+ sa0   --   g_R1347_U183/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U184/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U182/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U185/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U74/ZN   (AND2_X1)
+ sa1   --   g_R1347_U172/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U74/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U75/ZN   (AND2_X1)
+ sa1   --   g_R1347_U173/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U174/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa1   DS   g_R1347_U175/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U10/ZN   (AND2_X1)
+ sa0   --   g_R1347_U10/A1   (AND2_X1)
+ sa0   --   g_R1347_U10/A2   (AND2_X1)
+ sa0   --   g_R1347_U83/ZN   (AND3_X1)
+ sa0   --   g_R1347_U83/A1   (AND3_X1)
+ sa0   --   g_R1347_U83/A3   (AND3_X1)
+ sa0   --   g_R1347_U83/A2   (AND3_X1)
+ sa0   --   g_R1347_U81/ZN   (AND2_X1)
+ sa0   --   g_R1347_U81/A1   (AND2_X1)
+ sa0   --   g_R1347_U81/A2   (AND2_X1)
+ sa0   --   g_R1347_U82/ZN   (AND2_X1)
+ sa0   --   g_R1347_U82/A1   (AND2_X1)
+ sa0   --   g_R1347_U82/A2   (AND2_X1)
+ sa0   --   g_R1347_U173/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U80/ZN   (AND2_X1)
+ sa0   --   g_R1347_U80/A1   (AND2_X1)
+ sa0   --   g_R1347_U80/A2   (AND2_X1)
+ sa0   --   g_R1347_U172/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U175/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U174/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=16, passing=96>
+ sa0   DS   g_R1347_U9/ZN   (AND2_X1)
+ sa0   --   g_R1347_U9/A1   (AND2_X1)
+ sa0   --   g_R1347_U9/A2   (AND2_X1)
+ sa0   --   g_R1347_U181/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U180/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/83_stil/16.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/83_stil/16.stil with 0 errors.
+ End reading 807 patterns, CPU_time = 0.18 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/83_fail/16.diag

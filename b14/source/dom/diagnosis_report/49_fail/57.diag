@@ -1,0 +1,40 @@
+run_diagnosis ./tmax_fail/49_fail/57.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 58 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/49_fail/57.fail
+ #failing_pat=58, #failures=58, #defects=1, #faults=4, CPU_time=0.20
+ Simulated : #failing_pat=58, #passing_pat=96, #failures=58
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=58, #passing_pat=96, #failures=58
+ ------------------------------------------------------------------------------
+ match=53.21%, #explained patterns: <failing=58, passing=45>
+ sa1   DS   g_R1162_U68/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U68/A2   (NAND2_X1)
+ sa0   --   g_R1162_U68/A1   (NAND2_X1)
+ sa0   --   g_R1162_U274/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U275/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=53.21%, #explained patterns: <failing=58, passing=45>
+ sa1   DS   g_R1162_U274/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=53.21%, #explained patterns: <failing=58, passing=45>
+ sa1   DS   g_R1162_U273/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U273/A1   (NAND2_X1)
+ sa0   --   g_R1162_U273/A2   (NAND2_X1)
+ sa0   --   g_R1162_U272/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U271/ZN   (NAND2_X1)
+ sa1   --   g_R1162_U275/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=51.33%, #explained patterns: <failing=58, passing=43>
+ sa1   DS   g_R1162_U93/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U93/A1   (NAND2_X1)
+ sa0   --   g_R1162_U93/A2   (NAND2_X1)
+ sa0   --   g_R1162_U135/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U134/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/49_stil/58.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/49_stil/58.stil with 0 errors.
+ End reading 254 patterns, CPU_time = 0.06 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/49_fail/58.diag

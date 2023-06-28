@@ -1,0 +1,54 @@
+run_diagnosis ./tmax_fail/2_fail/13.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 14 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2_fail/13.fail
+ #failing_pat=14, #failures=14, #defects=1, #faults=10, CPU_time=0.71
+ Simulated : #failing_pat=14, #passing_pat=96, #failures=14
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=10, #failing_pat=14, #passing_pat=96, #failures=14
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3932/ZN   (AND2_X1)
+ sa1   --   g_U3931/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3934/ZN   (AND2_X1)
+ sa1   --   g_U3933/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3936/ZN   (AND2_X1)
+ sa1   --   g_U3935/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3938/ZN   (AND2_X1)
+ sa1   --   g_U3937/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3940/ZN   (AND2_X1)
+ sa1   --   g_U3939/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3942/ZN   (AND2_X1)
+ sa1   --   g_U3941/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3944/ZN   (AND2_X1)
+ sa1   --   g_U3943/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3946/ZN   (AND2_X1)
+ sa1   --   g_U3945/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_U3948/ZN   (AND2_X1)
+ sa1   --   g_U3947/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=96>
+ sa1   DS   g_R395_U180/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/2_stil/14.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/2_stil/14.stil with 0 errors.
+ End reading 1790 patterns, CPU_time = 0.42 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/2_fail/14.diag

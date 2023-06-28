@@ -1,0 +1,12 @@
+dom-27_resp_1.bmp 0.8571428571428571
+dom-27_resp_2.bmp 0.8571428571428571
+dom-27_resp_3.bmp 0.8571428571428571
+dom-27_resp_4.bmp 0.8571428571428571
+dom-27_resp_5.bmp 0.8571428571428571
+dom-27_resp_6.bmp 1.0
+dom-27_resp_7.bmp 1.0
+dom-27_resp_8.bmp 1.0
+dom-27_resp_9.bmp 1.0
+dom-27_resp_10.bmp 1.0
+dom-27_resp_11.bmp 1.0
+dom-27_resp_all.bmp 1

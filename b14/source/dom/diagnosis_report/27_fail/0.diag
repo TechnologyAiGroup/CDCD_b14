@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/27_fail/0.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/27_fail/0.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=4, CPU_time=0.16
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_U3159/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U5712/ZN   (NAND2_X1)
+ sa0   --   g_U5712/A2   (NAND2_X1)
+ sa0   --   g_U5712/A1   (NAND2_X1)
+ sa1   --   g_U3159/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_R1165_U561/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U561/A2   (NAND2_X1)
+ sa0   --   g_R1165_U561/A1   (NAND2_X1)
+ sa0   --   g_R1165_U559/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U278/ZN   (INV_X1)
+ sa1   --   g_R1165_U278/A   (INV_X1)
+ sa1   --   g_R1165_U106/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_R1165_U557/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U557/A2   (NAND2_X1)
+ sa0   --   g_R1165_U557/A1   (NAND2_X1)
+ sa1   --   g_R1165_U559/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/27_stil/1.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/27_stil/1.stil with 0 errors.
+ End reading 438 patterns, CPU_time = 0.13 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/27_fail/1.diag

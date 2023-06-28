@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/21_fail/37.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 38 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/21_fail/37.fail
+ #failing_pat=38, #failures=38, #defects=1, #faults=5, CPU_time=0.14
+ Simulated : #failing_pat=38, #passing_pat=42, #failures=38
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=38, #passing_pat=42, #failures=38
+ ------------------------------------------------------------------------------
+ match=52.78%, #explained patterns: <failing=38, passing=4>
+ sa0   DS   g_U4836/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.67%, #explained patterns: <failing=38, passing=4>
+ sa0   DS   g_U6043/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.67%, #explained patterns: <failing=38, passing=4>
+ sa0   DS   g_U6044/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.67%, #explained patterns: <failing=38, passing=4>
+ sa0   DS   g_U4838/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.67%, #explained patterns: <failing=38, passing=4>
+ sa0   DS   g_U4839/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/21_stil/370.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/21_stil/370.stil with 0 errors.
+ End reading 814 patterns, CPU_time = 0.20 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/21_fail/370.diag

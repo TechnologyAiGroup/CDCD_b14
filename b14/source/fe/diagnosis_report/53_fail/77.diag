@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/53_fail/77.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 78 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/53_fail/77.fail
+ #failing_pat=78, #failures=78, #defects=1, #faults=6, CPU_time=0.42
+ Simulated : #failing_pat=78, #passing_pat=96, #failures=78
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=78, #passing_pat=96, #failures=78
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa0   DS   g_R1138_U325/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa0   DS   g_R1138_U288/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa1   DS   g_R1138_U22/ZN   (AND2_X1)
+ sa1   --   g_U4608/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa1   DS   g_R1138_U326/ZN   (NAND2_X1)
+ sa0   --   g_R1138_U326/A1   (NAND2_X1)
+ sa0   --   g_R1138_U326/A2   (NAND2_X1)
+ sa0   --   g_R1138_U153/ZN   (AND2_X1)
+ sa0   --   g_R1138_U153/A1   (AND2_X1)
+ sa0   --   g_R1138_U153/A2   (AND2_X1)
+ sa0   --   g_R1138_U176/ZN   (AND2_X1)
+ sa0   --   g_R1138_U176/A2   (AND2_X1)
+ sa0   --   g_R1138_U176/A1   (AND2_X1)
+ sa0   --   g_R1138_U476/ZN   (NAND2_X1)
+ sa0   --   g_R1138_U477/ZN   (NAND2_X1)
+ sa1   --   g_R1138_U22/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa1   DS   g_R1138_U476/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa1   DS   g_R1138_U477/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/53_stil/78.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/53_stil/78.stil with 0 errors.
+ End reading 1893 patterns, CPU_time = 0.43 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/53_fail/78.diag

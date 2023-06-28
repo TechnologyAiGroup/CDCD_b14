@@ -1,0 +1,3 @@
+or-21_resp_1.bmp 0.3
+or-21_resp_2.bmp 1.0
+or-21_resp_all.bmp 1

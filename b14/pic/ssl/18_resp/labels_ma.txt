@@ -1,0 +1,4 @@
+ssl-18_resp_1.bmp 0.5
+ssl-18_resp_2.bmp 0.8571428571428571
+ssl-18_resp_3.bmp 1.0
+ssl-18_resp_all.bmp 1

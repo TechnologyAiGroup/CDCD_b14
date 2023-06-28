@@ -1,0 +1,74 @@
+run_diagnosis ./tmax_fail/14_fail/4.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 5 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/14_fail/4.fail
+ #failing_pat=5, #failures=5, #defects=1, #faults=11, CPU_time=0.14
+ Simulated : #failing_pat=5, #passing_pat=69, #failures=5
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=11, #failing_pat=5, #passing_pat=69, #failures=5
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U187/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U187/A1   (NAND2_X1)
+ sa0   --   g_R1165_U187/A2   (NAND2_X1)
+ sa0   --   g_R1165_U287/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U286/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U103/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U103/A2   (NAND2_X1)
+ sa0   --   g_R1165_U103/A1   (NAND2_X1)
+ sa0   --   g_R1165_U541/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U542/ZN   (NAND2_X1)
+ sa1   --   g_U5221/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U540/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U540/A1   (NAND2_X1)
+ sa0   --   g_R1165_U540/A2   (NAND2_X1)
+ sa0   --   g_R1165_U539/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U538/ZN   (NAND2_X1)
+ sa1   --   g_R1165_U542/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U538/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U539/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U541/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U487/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U488/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_R1165_U84/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U84/A2   (NAND2_X1)
+ sa0   --   g_R1165_U84/A1   (NAND2_X1)
+ sa0   --   g_R1165_U487/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U488/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_U3156/ZN   (NAND2_X1)
+ sa0   --   g_U3156/A1   (NAND2_X1)
+ sa0   --   g_U3156/A2   (NAND2_X1)
+ sa0   --   g_U5705/ZN   (NAND2_X1)
+ sa0   --   g_U5704/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=69>
+ sa1   DS   g_U3185/ZN   (NAND2_X1)
+ sa0   --   g_U3185/A2   (NAND2_X1)
+ sa0   --   g_U3185/A1   (NAND2_X1)
+ sa0   --   g_U5645/ZN   (NAND2_X1)
+ sa0   --   g_U5646/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/14_stil/40.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/14_stil/40.stil with 0 errors.
+ End reading 858 patterns, CPU_time = 0.23 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/14_fail/40.diag

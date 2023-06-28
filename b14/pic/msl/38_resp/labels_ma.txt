@@ -1,0 +1,8 @@
+msl-38_resp_1.bmp 0.16
+msl-38_resp_2.bmp 0.4
+msl-38_resp_3.bmp 0.4
+msl-38_resp_4.bmp 0.4
+msl-38_resp_5.bmp 1.0
+msl-38_resp_6.bmp 1.0
+msl-38_resp_7.bmp 1.0
+msl-38_resp_all.bmp 1

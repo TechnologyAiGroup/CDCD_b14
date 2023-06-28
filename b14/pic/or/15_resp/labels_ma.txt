@@ -1,0 +1,4 @@
+or-15_resp_1.bmp 0.0
+or-15_resp_2.bmp 1.0
+or-15_resp_3.bmp 1.0
+or-15_resp_all.bmp 1

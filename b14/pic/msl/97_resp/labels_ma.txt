@@ -1,0 +1,4 @@
+msl-97_resp_1.bmp 0.65
+msl-97_resp_2.bmp 0.8695652173913043
+msl-97_resp_3.bmp 1.0
+msl-97_resp_all.bmp 1

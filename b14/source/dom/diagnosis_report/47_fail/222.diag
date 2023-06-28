@@ -1,0 +1,52 @@
+run_diagnosis ./tmax_fail/47_fail/222.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 223 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/47_fail/222.fail
+ #failing_pat=223, #failures=223, #defects=1, #faults=3, CPU_time=0.32
+ Simulated : #failing_pat=223, #passing_pat=96, #failures=223
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=223, #passing_pat=96, #failures=223
+ ------------------------------------------------------------------------------
+ match=94.89%, #explained patterns: <failing=223, passing=84>
+ sa1   DS   g_U3849/ZN   (AND2_X1)
+ sa1   --   g_U4949/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=81.39%, #explained patterns: <failing=223, passing=45>
+ sa1   DS   g_U3444/ZN   (NAND2_X1)
+ sa0   --   g_U3444/A2   (NAND2_X1)
+ sa0   --   g_U3444/A1   (NAND2_X1)
+ sa0   --   g_U5776/ZN   (NAND2_X1)
+ sa0   --   g_U5777/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.47%, #explained patterns: <failing=223, passing=7>
+ sa1   DS   U3258   (_PO)
+ sa1   --   g_U3258/ZN   (NAND2_X1)
+ sa0   --   g_U3258/A1   (NAND2_X1)
+ sa0   --   g_U3258/A2   (NAND2_X1)
+ sa0   --   g_U3852/ZN   (AND3_X1)
+ sa0   --   g_U3852/A2   (AND3_X1)
+ sa0   --   g_U3852/A1   (AND3_X1)
+ sa0   --   g_U3852/A3   (AND3_X1)
+ sa0   --   g_U3850/ZN   (AND4_X1)
+ sa0   --   g_U3850/A3   (AND4_X1)
+ sa0   --   g_U3850/A1   (AND4_X1)
+ sa0   --   g_U3850/A4   (AND4_X1)
+ sa0   --   g_U3850/A2   (AND4_X1)
+ sa0   --   g_U3851/ZN   (AND2_X1)
+ sa0   --   g_U3851/A2   (AND2_X1)
+ sa0   --   g_U3851/A1   (AND2_X1)
+ sa0   --   g_U4953/ZN   (NAND2_X1)
+ sa0   --   g_U4954/ZN   (NAND2_X1)
+ sa0   --   g_U4951/ZN   (NAND2_X1)
+ sa0   --   g_U4949/ZN   (NAND2_X1)
+ sa0   --   g_U4950/ZN   (NAND3_X1)
+ sa0   --   g_U4948/ZN   (NAND3_X1)
+ sa0   --   g_U4952/ZN   (NAND2_X1)
+ sa0   --   g_U4955/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/47_stil/223.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/47_stil/223.stil with 0 errors.
+ End reading 500 patterns, CPU_time = 0.11 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/47_fail/223.diag

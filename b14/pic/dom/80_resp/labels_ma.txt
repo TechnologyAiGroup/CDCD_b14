@@ -1,0 +1,5 @@
+dom-80_resp_1.bmp 0.5
+dom-80_resp_2.bmp 1.0
+dom-80_resp_3.bmp 1.0
+dom-80_resp_4.bmp 1.0
+dom-80_resp_all.bmp 1

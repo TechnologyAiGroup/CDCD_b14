@@ -1,0 +1,80 @@
+run_diagnosis ./tmax_fail/32_fail/24.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 25 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/32_fail/24.fail
+ #failing_pat=25, #failures=25, #defects=1, #faults=13, CPU_time=0.31
+ Simulated : #failing_pat=25, #passing_pat=96, #failures=25
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=13, #failing_pat=25, #passing_pat=96, #failures=25
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=25, passing=96>
+ sa1   DS   g_U5644/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=25, passing=96>
+ sa1   DS   g_U5702/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U185/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U185/A1   (NAND2_X1)
+ sa0   --   g_R1165_U185/A2   (NAND2_X1)
+ sa0   --   g_R1165_U291/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U290/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U102/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U102/A2   (NAND2_X1)
+ sa0   --   g_R1165_U102/A1   (NAND2_X1)
+ sa0   --   g_R1165_U534/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U535/ZN   (NAND2_X1)
+ sa1   --   g_U5391/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U533/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U533/A1   (NAND2_X1)
+ sa0   --   g_R1165_U533/A2   (NAND2_X1)
+ sa0   --   g_R1165_U532/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U531/ZN   (NAND2_X1)
+ sa1   --   g_R1165_U535/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U490/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U531/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U532/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U491/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U85/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U85/A2   (NAND2_X1)
+ sa0   --   g_R1165_U85/A1   (NAND2_X1)
+ sa0   --   g_R1165_U490/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U491/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_R1165_U534/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_U3155/ZN   (NAND2_X1)
+ sa0   --   g_U3155/A1   (NAND2_X1)
+ sa0   --   g_U3155/A2   (NAND2_X1)
+ sa0   --   g_U5703/ZN   (NAND2_X1)
+ sa0   --   g_U5702/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=95>
+ sa1   DS   g_U3184/ZN   (NAND2_X1)
+ sa0   --   g_U3184/A2   (NAND2_X1)
+ sa0   --   g_U3184/A1   (NAND2_X1)
+ sa0   --   g_U5643/ZN   (NAND2_X1)
+ sa0   --   g_U5644/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/32_stil/25.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/32_stil/25.stil with 0 errors.
+ End reading 1341 patterns, CPU_time = 0.30 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/32_fail/25.diag

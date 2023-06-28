@@ -1,0 +1,34 @@
+run_diagnosis ./tmax_fail/7_fail/41.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 47 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/7_fail/41.fail
+ #failing_pat=42, #failures=47, #defects=2, #faults=5, CPU_time=0.44
+ Simulated : #failing_pat=42, #passing_pat=96, #failures=47
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=41, #passing_pat=97, #failures=43
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_U5662/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=4, #passing_pat=134, #failures=4
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=134>
+ sa1   DS   g_R1165_U49/ZN   (INV_X1)
+ sa0   --   g_R1165_U49/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=134>
+ sa1   DS   g_R1165_U558/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=134>
+ sa1   DS   g_R1165_U557/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=4, passing=133>
+ sa1   DS   g_R1165_U486/ZN   (INV_X1)
+ sa0   --   g_R1165_U486/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/7_stil/42.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/7_stil/42.stil with 0 errors.
+ End reading 2217 patterns, CPU_time = 0.52 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/7_fail/42.diag

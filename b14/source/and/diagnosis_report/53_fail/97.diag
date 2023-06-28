@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/53_fail/97.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 98 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/53_fail/97.fail
+ #failing_pat=98, #failures=98, #defects=1, #faults=3, CPU_time=0.23
+ Simulated : #failing_pat=98, #passing_pat=96, #failures=98
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=98, #passing_pat=96, #failures=98
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=98, passing=96>
+ sa0   DS   g_R1171_U190/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=98, passing=96>
+ sa1   DS   g_R1171_U23/ZN   (AND2_X1)
+ sa1   --   g_U4706/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=98, passing=96>
+ sa1   DS   g_R1171_U318/ZN   (NAND2_X1)
+ sa0   --   g_R1171_U318/A1   (NAND2_X1)
+ sa0   --   g_R1171_U318/A2   (NAND2_X1)
+ sa0   --   g_R1171_U151/ZN   (AND3_X1)
+ sa0   --   g_R1171_U151/A2   (AND3_X1)
+ sa0   --   g_R1171_U151/A1   (AND3_X1)
+ sa0   --   g_R1171_U151/A3   (AND3_X1)
+ sa0   --   g_R1171_U317/ZN   (NAND2_X1)
+ sa0   --   g_R1171_U450/ZN   (NAND2_X1)
+ sa0   --   g_R1171_U451/ZN   (NAND2_X1)
+ sa1   --   g_R1171_U23/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/53_stil/98.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/53_stil/98.stil with 0 errors.
+ End reading 2249 patterns, CPU_time = 0.49 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/53_fail/98.diag

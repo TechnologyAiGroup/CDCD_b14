@@ -1,0 +1,13 @@
+fe-42_resp_1.bmp 0.14545454545454545
+fe-42_resp_2.bmp 0.6993006993006993
+fe-42_resp_3.bmp 0.8461538461538461
+fe-42_resp_4.bmp 0.9166666666666666
+fe-42_resp_5.bmp 1.0
+fe-42_resp_6.bmp 1.0
+fe-42_resp_7.bmp 1.0
+fe-42_resp_8.bmp 1.0
+fe-42_resp_9.bmp 1.0
+fe-42_resp_10.bmp 1.0
+fe-42_resp_11.bmp 1.0
+fe-42_resp_12.bmp 1.0
+fe-42_resp_all.bmp 1

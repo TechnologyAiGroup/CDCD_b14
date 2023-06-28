@@ -1,0 +1,40 @@
+run_diagnosis ./tmax_fail/38_fail/0.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/38_fail/0.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=4, CPU_time=4.02
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U5926/ZN   (NAND2_X1)
+ sa0   --   g_U5926/A1   (NAND2_X1)
+ sa0   --   g_U5926/A2   (NAND2_X1)
+ sa1   --   g_U3502/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U5782/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U6220/ZN   (NAND2_X1)
+ sa0   --   g_U6220/A1   (NAND2_X1)
+ sa0   --   g_U6220/A2   (NAND2_X1)
+ sa0   --   g_U5912/ZN   (INV_X1)
+ sa1   --   g_U5912/A   (INV_X1)
+ sa0   --   g_U4471/ZN   (INV_X1)
+ sa1   --   g_U4471/A   (INV_X1)
+ sa1   --   g_U6222/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U4527/ZN   (NAND2_X1)
+ sa0   --   g_U4527/A1   (NAND2_X1)
+ sa0   --   g_U4527/A2   (NAND2_X1)
+ sa1   --   g_U3079/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/38_stil/1.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/38_stil/1.stil with 0 errors.
+ End reading 884 patterns, CPU_time = 0.22 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/38_fail/1.diag

@@ -1,0 +1,33 @@
+run_diagnosis ./tmax_fail/3_fail/1.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/3_fail/1.fail
+ #failing_pat=2, #failures=3, #defects=2, #faults=4, CPU_time=0.16
+ Simulated : #failing_pat=2, #passing_pat=93, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=1, #passing_pat=94, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=94>
+ sa1   DS   g_R1240_U315/ZN   (INV_X1)
+ sa0   --   g_R1240_U315/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=94>
+ sa1   DS   g_R1240_U314/ZN   (NAND2_X1)
+ sa0   --   g_R1240_U314/A1   (NAND2_X1)
+ sa0   --   g_R1240_U314/A2   (NAND2_X1)
+ sa1   --   g_R1240_U100/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_R1240_U100/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=1, #passing_pat=94, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=94>
+ sa1   DS   g_U4797/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/3_stil/10.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/3_stil/10.stil with 0 errors.
+ End reading 1132 patterns, CPU_time = 0.31 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/3_fail/10.diag

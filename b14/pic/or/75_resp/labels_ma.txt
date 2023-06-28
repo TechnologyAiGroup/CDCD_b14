@@ -1,0 +1,5 @@
+or-75_resp_1.bmp 0.25
+or-75_resp_2.bmp 0.6666666666666666
+or-75_resp_3.bmp 0.6666666666666666
+or-75_resp_4.bmp 1.0
+or-75_resp_all.bmp 1

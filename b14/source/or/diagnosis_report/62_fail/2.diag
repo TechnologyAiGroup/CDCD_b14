@@ -1,0 +1,79 @@
+run_diagnosis ./tmax_fail/62_fail/2.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/62_fail/2.fail
+ #failing_pat=3, #failures=3, #defects=1, #faults=16, CPU_time=0.03
+ Simulated : #failing_pat=3, #passing_pat=8, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=16, #failing_pat=3, #passing_pat=8, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_U4961/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_U5779/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa1   DS   g_R1162_U89/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U89/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U89/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U152/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U151/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U241/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U241/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U240/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U239/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa1   DS   g_R1162_U63/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U63/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U63/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U242/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=8>
+ sa0   DS   g_R1162_U243/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/62_stil/20.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/62_stil/20.stil with 0 errors.
+ End reading 61 patterns, CPU_time = 0.02 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/62_fail/20.diag

@@ -1,0 +1,10 @@
+msl-64_resp_1.bmp 0.03333333333333333
+msl-64_resp_2.bmp 0.06666666666666667
+msl-64_resp_3.bmp 0.08333333333333333
+msl-64_resp_4.bmp 0.3333333333333333
+msl-64_resp_5.bmp 1.0
+msl-64_resp_6.bmp 1.0
+msl-64_resp_7.bmp 1.0
+msl-64_resp_8.bmp 1.0
+msl-64_resp_9.bmp 1.0
+msl-64_resp_all.bmp 1

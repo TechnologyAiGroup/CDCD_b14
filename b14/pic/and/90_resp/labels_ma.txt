@@ -1,0 +1,8 @@
+and-90_resp_1.bmp 0.125
+and-90_resp_2.bmp 0.16666666666666666
+and-90_resp_3.bmp 0.16666666666666666
+and-90_resp_4.bmp 0.16666666666666666
+and-90_resp_5.bmp 1.0
+and-90_resp_6.bmp 1.0
+and-90_resp_7.bmp 1.0
+and-90_resp_all.bmp 1

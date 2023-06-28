@@ -1,0 +1,34 @@
+run_diagnosis ./tmax_fail/18_fail/117.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 118 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/18_fail/117.fail
+ #failing_pat=118, #failures=118, #defects=2, #faults=4, CPU_time=0.24
+ Simulated : #failing_pat=118, #passing_pat=96, #failures=118
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=60, #passing_pat=154, #failures=60
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=60, passing=154>
+ sa1   DS   g_U6114/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=58, #passing_pat=156, #failures=58
+ ------------------------------------------------------------------------------
+ match=89.23%, #explained patterns: <failing=58, passing=149>
+ sa1   DS   g_U5317/ZN   (NAND2_X1)
+ sa0   --   g_U5317/A1   (NAND2_X1)
+ sa0   --   g_U5317/A2   (NAND2_X1)
+ sa1   --   g_U3221_tmp/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=87.88%, #explained patterns: <failing=58, passing=148>
+ sa1   DS   g_U3221_tmp/ZN   (AND2_X1)
+ sa1   --   g_U3221/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=82.86%, #explained patterns: <failing=58, passing=144>
+ sa0   DS   U3221   (_PO)
+ sa0   --   g_U3221/ZN   (NAND4_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/18_stil/118.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/18_stil/118.stil with 0 errors.
+ End reading 991 patterns, CPU_time = 0.26 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/18_fail/118.diag

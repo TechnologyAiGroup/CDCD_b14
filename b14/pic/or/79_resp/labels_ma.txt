@@ -1,0 +1,5 @@
+or-79_resp_1.bmp 0.5
+or-79_resp_2.bmp 1.0
+or-79_resp_3.bmp 1.0
+or-79_resp_4.bmp 1.0
+or-79_resp_all.bmp 1

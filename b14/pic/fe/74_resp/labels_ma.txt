@@ -1,0 +1,9 @@
+fe-74_resp_1.bmp 1.0
+fe-74_resp_2.bmp 1.0
+fe-74_resp_3.bmp 1.0
+fe-74_resp_4.bmp 1.0
+fe-74_resp_5.bmp 1.0
+fe-74_resp_6.bmp 1.0
+fe-74_resp_7.bmp 1.0
+fe-74_resp_8.bmp 1.0
+fe-74_resp_all.bmp 1

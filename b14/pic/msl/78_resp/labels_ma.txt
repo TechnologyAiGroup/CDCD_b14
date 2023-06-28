@@ -1,0 +1,9 @@
+msl-78_resp_1.bmp 0.49056603773584906
+msl-78_resp_2.bmp 1.0
+msl-78_resp_3.bmp 1.0
+msl-78_resp_4.bmp 1.0
+msl-78_resp_5.bmp 1.0
+msl-78_resp_6.bmp 1.0
+msl-78_resp_7.bmp 1.0
+msl-78_resp_8.bmp 1.0
+msl-78_resp_all.bmp 1

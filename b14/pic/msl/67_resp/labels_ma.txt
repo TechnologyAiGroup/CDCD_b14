@@ -1,0 +1,11 @@
+msl-67_resp_1.bmp 0.025974025974025976
+msl-67_resp_2.bmp 0.0
+msl-67_resp_3.bmp 0.6086956521739131
+msl-67_resp_4.bmp 1.0
+msl-67_resp_5.bmp 1.0
+msl-67_resp_6.bmp 1.0
+msl-67_resp_7.bmp 1.0
+msl-67_resp_8.bmp 1.0
+msl-67_resp_9.bmp 1.0
+msl-67_resp_10.bmp 1.0
+msl-67_resp_all.bmp 1

@@ -1,0 +1,32 @@
+run_diagnosis ./tmax_fail/70_fail/45.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 46 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/70_fail/45.fail
+ #failing_pat=46, #failures=46, #defects=1, #faults=3, CPU_time=0.21
+ Simulated : #failing_pat=46, #passing_pat=44, #failures=46
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=46, #passing_pat=44, #failures=46
+ ------------------------------------------------------------------------------
+ match=80.70%, #explained patterns: <failing=46, passing=33>
+ sa1   DS   g_R1162_U59/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U59/A2   (NAND2_X1)
+ sa0   --   g_R1162_U59/A1   (NAND2_X1)
+ sa0   --   g_R1162_U205/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U206/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=60.53%, #explained patterns: <failing=46, passing=22>
+ sa1   DS   g_U5768/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=56.79%, #explained patterns: <failing=46, passing=18>
+ sa1   DS   g_U3440/ZN   (NAND2_X1)
+ sa0   --   g_U3440/A2   (NAND2_X1)
+ sa0   --   g_U3440/A1   (NAND2_X1)
+ sa0   --   g_U5768/ZN   (NAND2_X1)
+ sa0   --   g_U5769/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/70_stil/450.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/70_stil/450.stil with 0 errors.
+ End reading 810 patterns, CPU_time = 0.19 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/70_fail/450.diag

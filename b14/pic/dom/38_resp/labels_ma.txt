@@ -1,0 +1,3 @@
+dom-38_resp_1.bmp 0.16842105263157894
+dom-38_resp_2.bmp 1.0
+dom-38_resp_all.bmp 1

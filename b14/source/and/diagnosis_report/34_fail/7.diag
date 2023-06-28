@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/34_fail/7.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 20 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/34_fail/7.fail
+ #failing_pat=8, #failures=20, #defects=2, #faults=5, CPU_time=0.17
+ Simulated : #failing_pat=8, #passing_pat=96, #failures=20
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=7, #passing_pat=97, #failures=19
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=97>
+ sa0   DS   g_R1162_U40/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=103, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=103>
+ sa1   DS   g_U5304/ZN   (NAND2_X1)
+ sa0   --   g_U5304/A1   (NAND2_X1)
+ sa0   --   g_U5304/A2   (NAND2_X1)
+ sa1   --   g_U5306/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=103>
+ sa0   DS   U3222   (_PO)
+ sa0   --   g_U3222/ZN   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=103>
+ sa1   DS   g_U5309/ZN   (NAND2_X1)
+ sa0   --   g_U5309/A1   (NAND2_X1)
+ sa0   --   g_U5309/A2   (NAND2_X1)
+ sa0   --   g_U5306/ZN   (NAND3_X1)
+ sa1   --   g_U3222/A3   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=103>
+ sa0   DS   g_U3035/ZN   (AND2_X1)
+ sa0   --   g_U3035/A2   (AND2_X1)
+ sa0   --   g_U3035/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/34_stil/8.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/34_stil/8.stil with 0 errors.
+ End reading 1740 patterns, CPU_time = 0.44 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/34_fail/8.diag

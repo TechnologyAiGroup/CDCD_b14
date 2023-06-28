@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/34_fail/98.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 99 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/34_fail/98.fail
+ #failing_pat=99, #failures=99, #defects=1, #faults=2, CPU_time=0.15
+ Simulated : #failing_pat=99, #passing_pat=24, #failures=99
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=99, #passing_pat=24, #failures=99
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=99, passing=24>
+ sa0   DS   g_U4911/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=95.19%, #explained patterns: <failing=99, passing=19>
+ sa1   DS   U3265   (_PO)
+ sa1   --   g_U3265/ZN   (NAND4_X1)
+ sa0   --   g_U3265/A4   (NAND4_X1)
+ sa0   --   g_U3265/A2   (NAND4_X1)
+ sa0   --   g_U3265/A1   (NAND4_X1)
+ sa0   --   g_U3265/A3   (NAND4_X1)
+ sa0   --   g_U3997/ZN   (AND2_X1)
+ sa0   --   g_U3997/A2   (AND2_X1)
+ sa0   --   g_U3997/A1   (AND2_X1)
+ sa0   --   g_U3831/ZN   (AND2_X1)
+ sa0   --   g_U3831/A2   (AND2_X1)
+ sa0   --   g_U3831/A1   (AND2_X1)
+ sa0   --   g_U3830/ZN   (AND2_X1)
+ sa0   --   g_U3830/A1   (AND2_X1)
+ sa0   --   g_U3830/A2   (AND2_X1)
+ sa0   --   g_U4912/ZN   (NAND2_X1)
+ sa0   --   g_U6073/ZN   (NAND2_X1)
+ sa0   --   g_U6074/ZN   (NAND2_X1)
+ sa0   --   g_U4913/ZN   (NAND2_X1)
+ sa0   --   g_U4914/ZN   (NAND2_X1)
+ sa0   --   g_U4911/ZN   (NAND2_X1)
+ sa0   --   g_U4910/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/34_stil/980.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/34_stil/980.stil with 0 errors.
+ End reading 1225 patterns, CPU_time = 0.27 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/34_fail/980.diag

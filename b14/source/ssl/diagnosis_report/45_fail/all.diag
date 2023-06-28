@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/45_fail/all.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/45_fail/all.fail
+ #failing_pat=2, #failures=2, #defects=1, #faults=4, CPU_time=0.11
+ Simulated : #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa0   DS   g_R1105_U90/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_R1105_U266/ZN   (NAND2_X1)
+ sa0   --   g_R1105_U266/A1   (NAND2_X1)
+ sa0   --   g_R1105_U266/A2   (NAND2_X1)
+ sa0   --   g_R1105_U89/ZN   (AND2_X1)
+ sa0   --   g_R1105_U89/A1   (AND2_X1)
+ sa0   --   g_R1105_U89/A2   (AND2_X1)
+ sa0   --   g_R1105_U262/ZN   (NAND2_X1)
+ sa0   --   g_R1105_U261/ZN   (NAND2_X1)
+ sa1   --   g_R1105_U57/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_R1105_U261/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_R1105_U262/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/46_stil/0.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/46_stil/0.stil with 0 errors.
+ End reading 474 patterns, CPU_time = 0.10 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/46_fail/0.diag

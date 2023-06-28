@@ -1,0 +1,3 @@
+dom-87_resp_1.bmp 0.14285714285714285
+dom-87_resp_2.bmp 1.0
+dom-87_resp_all.bmp 1

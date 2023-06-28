@@ -1,0 +1,2 @@
+ssl-50_resp_1.bmp 0.38095238095238093
+ssl-50_resp_all.bmp 1

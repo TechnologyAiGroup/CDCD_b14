@@ -1,0 +1,14 @@
+ssl-92_resp_1.bmp 0.4444444444444444
+ssl-92_resp_2.bmp 0.5
+ssl-92_resp_3.bmp 0.5
+ssl-92_resp_4.bmp 0.5
+ssl-92_resp_5.bmp 0.5
+ssl-92_resp_6.bmp 0.5
+ssl-92_resp_7.bmp 0.5
+ssl-92_resp_8.bmp 0.6666666666666666
+ssl-92_resp_9.bmp 1.0
+ssl-92_resp_10.bmp 1.0
+ssl-92_resp_11.bmp 1.0
+ssl-92_resp_12.bmp 1.0
+ssl-92_resp_13.bmp 1.0
+ssl-92_resp_all.bmp 1

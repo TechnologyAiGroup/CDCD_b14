@@ -1,0 +1,118 @@
+run_diagnosis ./tmax_fail/96_fail/6.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 7 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/96_fail/6.fail
+ #failing_pat=7, #failures=7, #defects=1, #faults=21, CPU_time=0.54
+ Simulated : #failing_pat=7, #passing_pat=96, #failures=7
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=21, #failing_pat=7, #passing_pat=96, #failures=7
+ ------------------------------------------------------------------------------
+ match=85.71%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_U3051/ZN   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5441/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5453/ZN   (NAND2_X1)
+ sa0   --   g_U5453/A2   (NAND2_X1)
+ sa0   --   g_U5453/A1   (NAND2_X1)
+ sa1   --   g_U3117/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5456/ZN   (NAND2_X1)
+ sa0   --   g_U5456/A2   (NAND2_X1)
+ sa0   --   g_U5456/A1   (NAND2_X1)
+ sa1   --   g_U3118/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5459/ZN   (NAND2_X1)
+ sa0   --   g_U5459/A2   (NAND2_X1)
+ sa0   --   g_U5459/A1   (NAND2_X1)
+ sa1   --   g_U3119/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5462/ZN   (NAND2_X1)
+ sa0   --   g_U5462/A2   (NAND2_X1)
+ sa0   --   g_U5462/A1   (NAND2_X1)
+ sa1   --   g_U3120/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5465/ZN   (NAND2_X1)
+ sa0   --   g_U5465/A2   (NAND2_X1)
+ sa0   --   g_U5465/A1   (NAND2_X1)
+ sa1   --   g_U3121/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5468/ZN   (NAND2_X1)
+ sa0   --   g_U5468/A2   (NAND2_X1)
+ sa0   --   g_U5468/A1   (NAND2_X1)
+ sa1   --   g_U3122/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_R395_U180/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5471/ZN   (NAND2_X1)
+ sa0   --   g_U5471/A2   (NAND2_X1)
+ sa0   --   g_U5471/A1   (NAND2_X1)
+ sa1   --   g_U3123/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5474/ZN   (NAND2_X1)
+ sa0   --   g_U5474/A2   (NAND2_X1)
+ sa0   --   g_U5474/A1   (NAND2_X1)
+ sa1   --   g_U3124/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5477/ZN   (NAND2_X1)
+ sa0   --   g_U5477/A2   (NAND2_X1)
+ sa0   --   g_U5477/A1   (NAND2_X1)
+ sa1   --   g_U3125/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U5484/ZN   (NAND2_X1)
+ sa0   --   g_U5484/A2   (NAND2_X1)
+ sa0   --   g_U5484/A1   (NAND2_X1)
+ sa1   --   g_U3126/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U6301/ZN   (NAND2_X1)
+ sa0   --   g_U6301/A1   (NAND2_X1)
+ sa0   --   g_U6301/A2   (NAND2_X1)
+ sa1   --   g_U3602/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa0   DS   g_U3602/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa1   DS   g_U6297/ZN   (NAND2_X1)
+ sa0   --   g_U6297/A1   (NAND2_X1)
+ sa0   --   g_U6297/A2   (NAND2_X1)
+ sa1   --   g_U3600/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.43%, #explained patterns: <failing=5, passing=96>
+ sa0   DS   g_U3600/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=28.57%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_U3774/ZN   (AND2_X1)
+ sa1   --   g_U4758/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U4759/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U3774/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=14.29%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_U4757/ZN   (NAND2_X1)
+ sa0   --   g_U4757/A2   (NAND2_X1)
+ sa0   --   g_U4757/A1   (NAND2_X1)
+ sa0   --   g_U4756/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/96_stil/7.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/96_stil/7.stil with 0 errors.
+ End reading 1165 patterns, CPU_time = 0.27 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/96_fail/7.diag

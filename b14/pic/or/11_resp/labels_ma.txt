@@ -1,0 +1,4 @@
+or-11_resp_1.bmp 0.08205128205128205
+or-11_resp_2.bmp 0.0
+or-11_resp_3.bmp 1.0
+or-11_resp_all.bmp 1

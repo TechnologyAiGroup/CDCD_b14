@@ -1,0 +1,40 @@
+run_diagnosis ./tmax_fail/12_fail/23.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 64 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/12_fail/23.fail
+ #failing_pat=24, #failures=64, #defects=2, #faults=5, CPU_time=0.16
+ Simulated : #failing_pat=24, #passing_pat=96, #failures=64
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=14, #passing_pat=106, #failures=14
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=106>
+ sa1   DS   g_U6019/ZN   (NAND2_X1)
+ sa0   --   g_U6019/A2   (NAND2_X1)
+ sa0   --   g_U6019/A1   (NAND2_X1)
+ sa1   --   g_U3548/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=93.33%, #explained patterns: <failing=14, passing=105>
+ sa0   DS   U3548   (_PO)
+ sa0   --   g_U3548/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=10, #passing_pat=110, #failures=50
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=110>
+ sa1   DS   g_R1150_U295/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=110>
+ sa1   DS   g_R1150_U356/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=110>
+ sa1   DS   g_R1150_U103/ZN   (NAND2_X1)
+ sa0   --   g_R1150_U103/A2   (NAND2_X1)
+ sa0   --   g_R1150_U103/A1   (NAND2_X1)
+ sa0   --   g_R1150_U295/ZN   (NAND2_X1)
+ sa0   --   g_R1150_U356/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/12_stil/24.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/12_stil/24.stil with 0 errors.
+ End reading 571 patterns, CPU_time = 0.12 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/12_fail/24.diag

@@ -1,0 +1,74 @@
+run_diagnosis ./tmax_fail/98_fail/1.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/98_fail/1.fail
+ #failing_pat=2, #failures=2, #defects=1, #faults=12, CPU_time=0.05
+ Simulated : #failing_pat=2, #passing_pat=15, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=12, #failing_pat=2, #passing_pat=15, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa0   DS   g_R1165_U205/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U15/ZN   (AND2_X1)
+ sa1   --   g_U5176/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U493/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U315/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U315/A1   (NAND2_X1)
+ sa0   --   g_R1165_U315/A2   (NAND2_X1)
+ sa0   --   g_R1165_U132/ZN   (AND3_X1)
+ sa0   --   g_R1165_U132/A1   (AND3_X1)
+ sa0   --   g_R1165_U132/A2   (AND3_X1)
+ sa0   --   g_R1165_U132/A3   (AND3_X1)
+ sa0   --   g_R1165_U314/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U518/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U517/ZN   (NAND2_X1)
+ sa1   --   g_R1165_U15/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U517/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U494/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U87/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U87/A2   (NAND2_X1)
+ sa0   --   g_R1165_U87/A1   (NAND2_X1)
+ sa0   --   g_R1165_U493/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U494/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_U3152/ZN   (NAND2_X1)
+ sa0   --   g_U3152/A1   (NAND2_X1)
+ sa0   --   g_U3152/A2   (NAND2_X1)
+ sa0   --   g_U5697/ZN   (NAND2_X1)
+ sa0   --   g_U5696/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_R1165_U518/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_U5696/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_U3181/ZN   (NAND2_X1)
+ sa0   --   g_U3181/A2   (NAND2_X1)
+ sa0   --   g_U3181/A1   (NAND2_X1)
+ sa0   --   g_U5637/ZN   (NAND2_X1)
+ sa0   --   g_U5638/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=15>
+ sa1   DS   g_U5638/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/98_stil/10.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/98_stil/10.stil with 0 errors.
+ End reading 215 patterns, CPU_time = 0.05 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/98_fail/10.diag

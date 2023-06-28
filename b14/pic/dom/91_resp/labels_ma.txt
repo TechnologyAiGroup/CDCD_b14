@@ -1,0 +1,5 @@
+dom-91_resp_1.bmp 0.041666666666666664
+dom-91_resp_2.bmp 0.36363636363636365
+dom-91_resp_3.bmp 0.36363636363636365
+dom-91_resp_4.bmp 1.0
+dom-91_resp_all.bmp 1

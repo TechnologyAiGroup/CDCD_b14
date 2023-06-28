@@ -1,0 +1,34 @@
+run_diagnosis ./tmax_fail/53_fail/81.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 82 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/53_fail/81.fail
+ #failing_pat=82, #failures=82, #defects=2, #faults=4, CPU_time=1.07
+ Simulated : #failing_pat=82, #passing_pat=96, #failures=82
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=81, #passing_pat=97, #failures=81
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=81, passing=97>
+ sa1   DS   g_U5123/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=1, #passing_pat=177, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=177>
+ sa1   DS   g_R1375_U17/A3   (AND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=177>
+ sa1   DS   g_R1375_U161/ZN   (NAND2_X1)
+ sa0   --   g_R1375_U161/A2   (NAND2_X1)
+ sa0   --   g_R1375_U161/A1   (NAND2_X1)
+ sa0   --   g_R1375_U29/ZN   (INV_X1)
+ sa1   --   g_R1375_U29/A   (INV_X1)
+ sa1   --   g_R1375_U24/A3   (AND3_X1)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=176>
+ sa1   DS   g_R1375_U209/A2   (NAND4_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/53_stil/82.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/53_stil/82.stil with 0 errors.
+ End reading 1756 patterns, CPU_time = 1.16 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/53_fail/82.diag

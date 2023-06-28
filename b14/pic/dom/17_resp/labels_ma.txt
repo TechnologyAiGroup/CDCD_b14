@@ -1,0 +1,5 @@
+dom-17_resp_1.bmp 0.8571428571428571
+dom-17_resp_2.bmp 0.8571428571428571
+dom-17_resp_3.bmp 0.9
+dom-17_resp_4.bmp 1.0
+dom-17_resp_all.bmp 1

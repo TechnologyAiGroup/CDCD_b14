@@ -1,0 +1,32 @@
+run_diagnosis ./tmax_fail/27_fail/30.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 31 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/27_fail/30.fail
+ #failing_pat=31, #failures=31, #defects=2, #faults=4, CPU_time=0.17
+ Simulated : #failing_pat=31, #passing_pat=96, #failures=31
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=9, #passing_pat=118, #failures=9
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=118>
+ sa0   DS   g_U3046/ZN   (AND2_X1)
+ sa0   --   g_U3046/A1   (AND2_X1)
+ sa0   --   g_U3046/A2   (AND2_X1)
+ sa0   --   g_U5172/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=22, #passing_pat=105, #failures=22
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=22, passing=105>
+ sa1   DS   g_U4684/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=22, passing=105>
+ sa1   DS   g_U4687/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=22, passing=105>
+ sa1   DS   g_U4688/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/27_stil/31.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/27_stil/31.stil with 0 errors.
+ End reading 2069 patterns, CPU_time = 0.45 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/27_fail/31.diag

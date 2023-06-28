@@ -1,0 +1,6 @@
+msl-89_resp_1.bmp 0.016666666666666666
+msl-89_resp_2.bmp 0.0
+msl-89_resp_3.bmp 0.0
+msl-89_resp_4.bmp 0.0
+msl-89_resp_5.bmp 1.0
+msl-89_resp_all.bmp 1

@@ -1,0 +1,151 @@
+run_diagnosis ./tmax_fail/48_fail/19.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 20 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/48_fail/19.fail
+ #failing_pat=20, #failures=20, #defects=1, #faults=26, CPU_time=0.78
+ Simulated : #failing_pat=20, #passing_pat=96, #failures=20
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=26, #failing_pat=20, #passing_pat=96, #failures=20
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=20, passing=96>
+ sa1   DS   g_R1347_U76/ZN   (AND2_X1)
+ sa1   --   g_R1347_U182/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=20, passing=96>
+ sa1   DS   g_R1347_U76/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=20, passing=96>
+ sa1   DS   g_R1347_U77/ZN   (AND2_X1)
+ sa1   --   g_R1347_U183/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=20, passing=96>
+ sa0   DS   g_R1347_U11/ZN   (AND3_X1)
+ sa0   --   g_R1347_U11/A1   (AND3_X1)
+ sa0   --   g_R1347_U11/A3   (AND3_X1)
+ sa0   --   g_R1347_U11/A2   (AND3_X1)
+ sa0   --   g_R1347_U78/ZN   (AND2_X1)
+ sa0   --   g_R1347_U78/A1   (AND2_X1)
+ sa0   --   g_R1347_U78/A2   (AND2_X1)
+ sa0   --   g_R1347_U79/ZN   (AND2_X1)
+ sa0   --   g_R1347_U79/A1   (AND2_X1)
+ sa0   --   g_R1347_U79/A2   (AND2_X1)
+ sa0   --   g_R1347_U183/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U184/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U182/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U185/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=20, passing=96>
+ sa0   DS   g_R1347_U9/ZN   (AND2_X1)
+ sa0   --   g_R1347_U9/A1   (AND2_X1)
+ sa0   --   g_R1347_U9/A2   (AND2_X1)
+ sa0   --   g_R1347_U181/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U180/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_R1347_U130/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_R1347_U209/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U129/ZN   (NAND3_X1)
+ sa0   --   g_R1347_U129/A2   (NAND3_X1)
+ sa0   --   g_R1347_U129/A1   (NAND3_X1)
+ sa0   --   g_R1347_U129/A3   (NAND3_X1)
+ sa1   --   g_R1347_U209/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U124/ZN   (INV_X1)
+ sa0   --   g_R1347_U124/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_R1347_U122/ZN   (INV_X1)
+ sa1   --   g_R1347_U122/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_R1347_U132/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_R1347_U128/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U61/ZN   (INV_X1)
+ sa0   --   g_R1347_U61/A   (INV_X1)
+ sa1   --   g_R1347_U112/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U112/ZN   (AND2_X1)
+ sa1   --   g_R1347_U192/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U194/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U194/A1   (NAND2_X1)
+ sa0   --   g_R1347_U194/A2   (NAND2_X1)
+ sa0   --   g_R1347_U113/ZN   (AND2_X1)
+ sa0   --   g_R1347_U113/A2   (AND2_X1)
+ sa0   --   g_R1347_U113/A1   (AND2_X1)
+ sa0   --   g_R1347_U191/ZN   (NAND4_X1)
+ sa0   --   g_R1347_U193/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U192/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U14/ZN   (INV_X1)
+ sa0   --   g_R1347_U14/A   (INV_X1)
+ sa1   --   g_R1347_U193/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U198/ZN   (NAND4_X1)
+ sa0   --   g_R1347_U198/A3   (NAND4_X1)
+ sa0   --   g_R1347_U198/A1   (NAND4_X1)
+ sa0   --   g_R1347_U198/A2   (NAND4_X1)
+ sa0   --   g_R1347_U198/A4   (NAND4_X1)
+ sa0   --   g_R1347_U116/ZN   (AND2_X1)
+ sa0   --   g_R1347_U116/A1   (AND2_X1)
+ sa0   --   g_R1347_U116/A2   (AND2_X1)
+ sa0   --   g_R1347_U195/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U127/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U196/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U115/ZN   (AND2_X1)
+ sa0   --   g_R1347_U115/A1   (AND2_X1)
+ sa0   --   g_R1347_U115/A2   (AND2_X1)
+ sa0   --   g_R1347_U210/ZN   (NAND2_X1)
+ sa0   --   g_R1347_U197/ZN   (NAND2_X1)
+ sa1   --   g_R1347_U13/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U70/ZN   (INV_X1)
+ sa0   --   g_R1347_U70/A   (INV_X1)
+ sa1   --   g_R1347_U210/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U127/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U195/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa1   DS   g_R1347_U13/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_R1347_U12/ZN   (AND2_X1)
+ sa0   --   g_R1347_U12/A1   (AND2_X1)
+ sa0   --   g_R1347_U12/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_U3597/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_U3596/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_U3595/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.24%, #explained patterns: <failing=20, passing=95>
+ sa0   DS   g_U3592/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/48_stil/2.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/48_stil/2.stil with 0 errors.
+ End reading 440 patterns, CPU_time = 0.10 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/48_fail/2.diag

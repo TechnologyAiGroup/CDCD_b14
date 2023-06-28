@@ -1,0 +1,3 @@
+or-51_resp_1.bmp 0.10416666666666667
+or-51_resp_2.bmp 1.0
+or-51_resp_all.bmp 1

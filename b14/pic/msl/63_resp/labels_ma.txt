@@ -1,0 +1,7 @@
+msl-63_resp_1.bmp 0.7346938775510204
+msl-63_resp_2.bmp 0.4375
+msl-63_resp_3.bmp 0.4666666666666667
+msl-63_resp_4.bmp 0.5
+msl-63_resp_5.bmp 1.0
+msl-63_resp_6.bmp 1.0
+msl-63_resp_all.bmp 1

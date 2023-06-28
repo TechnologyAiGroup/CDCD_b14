@@ -1,0 +1,3 @@
+ssl-72_resp_1.bmp 0.7
+ssl-72_resp_2.bmp 1.0
+ssl-72_resp_all.bmp 1

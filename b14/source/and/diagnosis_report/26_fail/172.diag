@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/26_fail/172.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 356 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/26_fail/172.fail
+ #failing_pat=173, #failures=356, #defects=2, #faults=3, CPU_time=0.40
+ Simulated : #failing_pat=173, #passing_pat=96, #failures=356
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=52, #passing_pat=217, #failures=235
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=52, passing=217>
+ sa0   DS   g_U3028/ZN   (AND2_X1)
+ sa0   --   g_U3028/A1   (AND2_X1)
+ sa0   --   g_U3028/A2   (AND2_X1)
+ sa0   --   g_U3908/ZN   (AND2_X1)
+ sa0   --   g_U3908/A1   (AND2_X1)
+ sa0   --   g_U3908/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=121, #passing_pat=148, #failures=121
+ ------------------------------------------------------------------------------
+ match=96.80%, #explained patterns: <failing=121, passing=144>
+ sa1   DS   g_U3228_tmp/ZN   (AND2_X1)
+ sa1   --   g_U3228/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=96.80%, #explained patterns: <failing=121, passing=144>
+ sa1   DS   g_U5254/ZN   (NAND2_X1)
+ sa0   --   g_U5254/A1   (NAND2_X1)
+ sa0   --   g_U5254/A2   (NAND2_X1)
+ sa1   --   g_U3228_tmp/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/26_stil/173.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/26_stil/173.stil with 0 errors.
+ End reading 1406 patterns, CPU_time = 0.31 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/26_fail/173.diag

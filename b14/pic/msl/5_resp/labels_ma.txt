@@ -1,0 +1,3 @@
+msl-5_resp_1.bmp 0.23076923076923078
+msl-5_resp_2.bmp 1.0
+msl-5_resp_all.bmp 1

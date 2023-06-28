@@ -1,0 +1,7 @@
+fe-80_resp_1.bmp 0.13636363636363635
+fe-80_resp_2.bmp 0.7857142857142857
+fe-80_resp_3.bmp 0.7857142857142857
+fe-80_resp_4.bmp 0.7857142857142857
+fe-80_resp_5.bmp 1.0
+fe-80_resp_6.bmp 1.0
+fe-80_resp_all.bmp 1

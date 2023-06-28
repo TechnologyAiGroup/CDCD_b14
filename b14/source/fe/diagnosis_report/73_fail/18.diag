@@ -1,0 +1,44 @@
+run_diagnosis ./tmax_fail/73_fail/18.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 19 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/73_fail/18.fail
+ #failing_pat=19, #failures=19, #defects=1, #faults=6, CPU_time=0.28
+ Simulated : #failing_pat=19, #passing_pat=96, #failures=19
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=19, #passing_pat=96, #failures=19
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=19, passing=96>
+ sa1   DS   g_R1207_U116/ZN   (NAND2_X1)
+ sa0   --   g_R1207_U116/A1   (NAND2_X1)
+ sa0   --   g_R1207_U116/A2   (NAND2_X1)
+ sa0   --   g_R1207_U487/ZN   (NAND2_X1)
+ sa0   --   g_R1207_U486/ZN   (NAND2_X1)
+ sa1   --   g_U4553/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=19, passing=96>
+ sa1   DS   g_R1207_U287/ZN   (INV_X1)
+ sa0   --   g_R1207_U287/A   (INV_X1)
+ sa1   --   g_R1207_U486/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=19, passing=96>
+ sa1   DS   g_R1207_U487/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.00%, #explained patterns: <failing=19, passing=95>
+ sa1   DS   g_R1207_U483/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.00%, #explained patterns: <failing=19, passing=95>
+ sa1   DS   g_R1207_U484/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.00%, #explained patterns: <failing=19, passing=95>
+ sa1   DS   g_R1207_U165/ZN   (NAND2_X1)
+ sa0   --   g_R1207_U165/A1   (NAND2_X1)
+ sa0   --   g_R1207_U165/A2   (NAND2_X1)
+ sa0   --   g_R1207_U484/ZN   (NAND2_X1)
+ sa0   --   g_R1207_U483/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/73_stil/19.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/73_stil/19.stil with 0 errors.
+ End reading 723 patterns, CPU_time = 0.18 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/73_fail/19.diag

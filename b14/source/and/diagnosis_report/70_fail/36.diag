@@ -1,0 +1,79 @@
+run_diagnosis ./tmax_fail/70_fail/36.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 37 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/70_fail/36.fail
+ #failing_pat=37, #failures=37, #defects=1, #faults=9, CPU_time=0.16
+ Simulated : #failing_pat=37, #passing_pat=31, #failures=37
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=9, #failing_pat=37, #passing_pat=31, #failures=37
+ ------------------------------------------------------------------------------
+ match=78.72%, #explained patterns: <failing=37, passing=21>
+ sa1   DS   g_R1162_U203/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=78.72%, #explained patterns: <failing=37, passing=21>
+ sa1   DS   g_R1162_U205/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=78.72%, #explained patterns: <failing=37, passing=21>
+ sa1   DS   g_R1162_U59/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U59/A2   (NAND2_X1)
+ sa0   --   g_R1162_U59/A1   (NAND2_X1)
+ sa0   --   g_R1162_U205/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U206/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=78.72%, #explained patterns: <failing=37, passing=21>
+ sa1   DS   g_R1162_U202/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=78.72%, #explained patterns: <failing=37, passing=21>
+ sa1   DS   g_R1162_U204/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U204/A1   (NAND2_X1)
+ sa0   --   g_R1162_U204/A2   (NAND2_X1)
+ sa0   --   g_R1162_U203/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U202/ZN   (NAND2_X1)
+ sa1   --   g_R1162_U206/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=78.72%, #explained patterns: <failing=37, passing=21>
+ sa1   DS   g_R1162_U80/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U80/A2   (NAND2_X1)
+ sa0   --   g_R1162_U80/A1   (NAND2_X1)
+ sa0   --   g_R1162_U105/ZN   (NAND2_X1)
+ sa0   --   g_R1162_U106/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=68.52%, #explained patterns: <failing=37, passing=15>
+ sa1   DS   g_U5768/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=62.71%, #explained patterns: <failing=37, passing=11>
+ sa1   DS   g_U3440/ZN   (NAND2_X1)
+ sa0   --   g_U3440/A2   (NAND2_X1)
+ sa0   --   g_U3440/A1   (NAND2_X1)
+ sa0   --   g_U5768/ZN   (NAND2_X1)
+ sa0   --   g_U5769/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=56.92%, #explained patterns: <failing=37, passing=3>
+ sa1   DS   U3244   (_PO)
+ sa1   --   g_U3244/ZN   (NAND2_X1)
+ sa0   --   g_U3244/A2   (NAND2_X1)
+ sa0   --   g_U3244/A1   (NAND2_X1)
+ sa0   --   g_U3880/ZN   (AND3_X1)
+ sa0   --   g_U3880/A1   (AND3_X1)
+ sa0   --   g_U3880/A2   (AND3_X1)
+ sa0   --   g_U3880/A3   (AND3_X1)
+ sa0   --   g_U3881/ZN   (AND3_X1)
+ sa0   --   g_U3881/A2   (AND3_X1)
+ sa0   --   g_U3881/A3   (AND3_X1)
+ sa0   --   g_U3881/A1   (AND3_X1)
+ sa0   --   g_U5092/ZN   (NAND2_X1)
+ sa0   --   g_U5091/ZN   (NAND2_X1)
+ sa0   --   g_U3879/ZN   (AND2_X1)
+ sa0   --   g_U3879/A2   (AND2_X1)
+ sa0   --   g_U3879/A1   (AND2_X1)
+ sa0   --   g_U5093/ZN   (NAND2_X1)
+ sa0   --   g_U5095/ZN   (NAND2_X1)
+ sa0   --   g_U5094/ZN   (NAND2_X1)
+ sa0   --   g_U5090/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/70_stil/360.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/70_stil/360.stil with 0 errors.
+ End reading 664 patterns, CPU_time = 0.18 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/70_fail/360.diag

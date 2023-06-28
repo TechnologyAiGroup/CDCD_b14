@@ -1,0 +1,27 @@
+run_diagnosis ./tmax_fail/49_fail/1361.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2079 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/49_fail/1361.fail
+ #failing_pat=1362, #failures=2079, #defects=1, #faults=3, CPU_time=0.55
+ Simulated : #failing_pat=1362, #passing_pat=96, #failures=2079
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=1362, #passing_pat=96, #failures=2079
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1362, passing=96>
+ sa01   DS   g_U5774/ZN   (NAND2_X1)
+ Internal_cell_type (cell_internal)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1362, passing=96>
+ sa01   DS   g_U3443/ZN   (NAND2_X1)
+ Internal_cell_type (cell_internal)
+ ------------------------------------------------------------------------------
+ match=99.47%, #explained patterns: <failing=1357, passing=96>
+ sa0   DS   g_U5775/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/49_stil/1362.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/49_stil/1362.stil with 0 errors.
+ End reading 1680 patterns, CPU_time = 0.46 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/49_fail/1362.diag

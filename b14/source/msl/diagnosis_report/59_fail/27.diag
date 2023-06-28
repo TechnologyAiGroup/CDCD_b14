@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/59_fail/27.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 28 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/59_fail/27.fail
+ #failing_pat=28, #failures=28, #defects=1, #faults=5, CPU_time=0.12
+ Simulated : #failing_pat=28, #passing_pat=96, #failures=28
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=27, #passing_pat=97, #failures=27
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=27, passing=97>
+ sa1   DS   g_R1282_U128/ZN   (INV_X1)
+ sa0   --   g_R1282_U128/A   (INV_X1)
+ sa1   --   g_R1282_U136/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=27, passing=97>
+ sa0   DS   g_R1282_U38/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=27, passing=97>
+ sa1   DS   g_R1282_U135/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=27, passing=97>
+ sa0   DS   g_R1282_U39/ZN   (AND2_X1)
+ sa0   --   g_R1282_U39/A2   (AND2_X1)
+ sa0   --   g_R1282_U39/A1   (AND2_X1)
+ sa0   --   g_R1282_U135/ZN   (NAND2_X1)
+ sa0   --   g_R1282_U136/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=27, passing=97>
+ sa1   DS   g_R1282_U38/A3   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/59_stil/28.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/59_stil/28.stil with 0 errors.
+ End reading 1243 patterns, CPU_time = 0.43 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/59_fail/28.diag

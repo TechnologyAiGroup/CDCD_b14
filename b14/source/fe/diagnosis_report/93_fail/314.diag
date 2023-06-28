@@ -1,0 +1,47 @@
+run_diagnosis ./tmax_fail/93_fail/314.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 315 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/93_fail/314.fail
+ #failing_pat=315, #failures=315, #defects=1, #faults=8, CPU_time=0.61
+ Simulated : #failing_pat=315, #passing_pat=96, #failures=315
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=315, #passing_pat=96, #failures=315
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=315, passing=96>
+ sa01   DS   g_U4405/ZN   (NAND2_X1)
+ Internal_cell_type (cell_internal)
+ ------------------------------------------------------------------------------
+ match=97.52%, #explained patterns: <failing=315, passing=96>
+ sa01   DS   g_U4409/ZN   (NAND2_X1)
+ Internal_cell_type (cell_internal)
+ ------------------------------------------------------------------------------
+ match=97.52%, #explained patterns: <failing=315, passing=96>
+ sa01   DS   g_U3701/ZN   (AND4_X1)
+ Internal_cell_type (cell_internal)
+ ------------------------------------------------------------------------------
+ match=96.90%, #explained patterns: <failing=313, passing=88>
+ sa1   DS   g_U4404/A   (INV_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=96.90%, #explained patterns: <failing=313, passing=88>
+ sa0   DS   g_U4408/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=96.90%, #explained patterns: <failing=313, passing=88>
+ sa0   DS   g_U4406/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=96.90%, #explained patterns: <failing=313, passing=88>
+ sa0   DS   g_U4407/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=96.90%, #explained patterns: <failing=313, passing=88>
+ sa0   DS   g_U4404/ZN   (INV_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/93_stil/315.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/93_stil/315.stil with 0 errors.
+ End reading 885 patterns, CPU_time = 0.20 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/93_fail/315.diag

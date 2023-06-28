@@ -1,0 +1,5 @@
+and-52_resp_1.bmp 0.06666666666666667
+and-52_resp_2.bmp 0.07142857142857142
+and-52_resp_3.bmp 1.0
+and-52_resp_4.bmp 1.0
+and-52_resp_all.bmp 1

@@ -1,0 +1,3 @@
+msl-36_resp_1.bmp 0.75
+msl-36_resp_2.bmp 1.0
+msl-36_resp_all.bmp 1

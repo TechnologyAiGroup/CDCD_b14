@@ -1,0 +1,7 @@
+or-37_resp_1.bmp 0.3157894736842105
+or-37_resp_2.bmp 0.0
+or-37_resp_3.bmp 0.0
+or-37_resp_4.bmp 0.46153846153846156
+or-37_resp_5.bmp 0.6
+or-37_resp_6.bmp 1.0
+or-37_resp_all.bmp 1

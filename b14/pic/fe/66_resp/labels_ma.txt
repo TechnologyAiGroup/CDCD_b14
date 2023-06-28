@@ -1,0 +1,4 @@
+fe-66_resp_1.bmp 0.0
+fe-66_resp_2.bmp 0.5128205128205128
+fe-66_resp_3.bmp 1.0
+fe-66_resp_all.bmp 1

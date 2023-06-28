@@ -1,0 +1,10 @@
+or-86_resp_1.bmp 0.6410256410256411
+or-86_resp_2.bmp 0.8333333333333334
+or-86_resp_3.bmp 0.8333333333333334
+or-86_resp_4.bmp 1.0
+or-86_resp_5.bmp 1.0
+or-86_resp_6.bmp 1.0
+or-86_resp_7.bmp 1.0
+or-86_resp_8.bmp 1.0
+or-86_resp_9.bmp 1.0
+or-86_resp_all.bmp 1

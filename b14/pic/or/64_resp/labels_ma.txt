@@ -1,0 +1,9 @@
+or-64_resp_1.bmp 0.1111111111111111
+or-64_resp_2.bmp 0.13333333333333333
+or-64_resp_3.bmp 0.3333333333333333
+or-64_resp_4.bmp 0.6
+or-64_resp_5.bmp 0.6
+or-64_resp_6.bmp 0.8571428571428571
+or-64_resp_7.bmp 0.8571428571428571
+or-64_resp_8.bmp 1.0
+or-64_resp_all.bmp 1

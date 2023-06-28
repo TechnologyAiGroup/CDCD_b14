@@ -1,0 +1,27 @@
+run_diagnosis ./tmax_fail/21_fail/530.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 531 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/21_fail/530.fail
+ #failing_pat=531, #failures=531, #defects=1, #faults=3, CPU_time=0.33
+ Simulated : #failing_pat=531, #passing_pat=96, #failures=531
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=531, #passing_pat=96, #failures=531
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=531, passing=96>
+ sa01   DS   g_U3280/ZN   (NAND3_X1)
+ sa01   --   U3280   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=531, passing=96>
+ sa01   DS   g_U3801/ZN   (AND2_X1)
+ sa01   --   g_U3280/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=531, passing=96>
+ sa01   DS   g_U4838/ZN   (NAND2_X1)
+ sa01   --   g_U3801/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/21_stil/531.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/21_stil/531.stil with 0 errors.
+ End reading 1154 patterns, CPU_time = 0.29 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/21_fail/531.diag

@@ -1,0 +1,5 @@
+fe-84_resp_1.bmp 0.8
+fe-84_resp_2.bmp 1.0
+fe-84_resp_3.bmp 1.0
+fe-84_resp_4.bmp 1.0
+fe-84_resp_all.bmp 1

@@ -1,0 +1,24 @@
+run_diagnosis ./tmax_fail/13_fail/158.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 164 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/13_fail/158.fail
+ #failing_pat=159, #failures=164, #defects=2, #faults=2, CPU_time=0.61
+ Simulated : #failing_pat=159, #passing_pat=96, #failures=164
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=155, #passing_pat=100, #failures=155
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=155, passing=100>
+ sa1   DS   g_U4821/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=4, #passing_pat=251, #failures=9
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=251>
+ sa0   DS   g_R1165_U483/ZN   (INV_X1)
+ sa1   --   g_R1165_U483/A   (INV_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/13_stil/159.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/13_stil/159.stil with 0 errors.
+ End reading 1649 patterns, CPU_time = 0.36 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/13_fail/159.diag

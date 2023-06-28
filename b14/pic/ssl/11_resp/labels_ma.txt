@@ -1,0 +1,5 @@
+ssl-11_resp_1.bmp 0.375
+ssl-11_resp_2.bmp 0.5
+ssl-11_resp_3.bmp 1.0
+ssl-11_resp_4.bmp 1.0
+ssl-11_resp_all.bmp 1

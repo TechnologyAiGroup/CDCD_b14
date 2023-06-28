@@ -1,0 +1,5 @@
+and-29_resp_1.bmp 0.3684210526315789
+and-29_resp_2.bmp 1.0
+and-29_resp_3.bmp 1.0
+and-29_resp_4.bmp 1.0
+and-29_resp_all.bmp 1

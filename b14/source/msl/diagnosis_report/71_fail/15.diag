@@ -1,0 +1,25 @@
+run_diagnosis ./tmax_fail/71_fail/15.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 16 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/71_fail/15.fail
+ #failing_pat=16, #failures=16, #defects=1, #faults=2, CPU_time=0.21
+ Simulated : #failing_pat=16, #passing_pat=96, #failures=16
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=14, #passing_pat=98, #failures=14
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=98>
+ sa1   DS   g_U5996/ZN   (NAND2_X1)
+ sa0   --   g_U5996/A1   (NAND2_X1)
+ sa0   --   g_U5996/A2   (NAND2_X1)
+ sa1   --   g_U3536/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=93.33%, #explained patterns: <failing=14, passing=97>
+ sa0   DS   U3536   (_PO)
+ sa0   --   g_U3536/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/71_stil/16.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/71_stil/16.stil with 0 errors.
+ End reading 2164 patterns, CPU_time = 0.58 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/71_fail/16.diag

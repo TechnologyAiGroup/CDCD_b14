@@ -1,0 +1,5 @@
+dom-58_resp_1.bmp 0.38095238095238093
+dom-58_resp_2.bmp 0.45714285714285713
+dom-58_resp_3.bmp 1.0
+dom-58_resp_4.bmp 1.0
+dom-58_resp_all.bmp 1

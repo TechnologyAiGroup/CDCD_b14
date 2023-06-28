@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/44_fail/186.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 187 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/44_fail/186.fail
+ #failing_pat=187, #failures=187, #defects=1, #faults=2, CPU_time=0.25
+ Simulated : #failing_pat=187, #passing_pat=96, #failures=187
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=187, #passing_pat=96, #failures=187
+ ------------------------------------------------------------------------------
+ match=99.47%, #explained patterns: <failing=187, passing=95>
+ sa1   DS   g_U4879/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=71.65%, #explained patterns: <failing=187, passing=22>
+ sa1   DS   U3272   (_PO)
+ sa1   --   g_U3272/ZN   (NAND4_X1)
+ sa0   --   g_U3272/A4   (NAND4_X1)
+ sa0   --   g_U3272/A2   (NAND4_X1)
+ sa0   --   g_U3272/A1   (NAND4_X1)
+ sa0   --   g_U3272/A3   (NAND4_X1)
+ sa0   --   g_U3990/ZN   (AND2_X1)
+ sa0   --   g_U3990/A2   (AND2_X1)
+ sa0   --   g_U3990/A1   (AND2_X1)
+ sa0   --   g_U3817/ZN   (AND2_X1)
+ sa0   --   g_U3817/A2   (AND2_X1)
+ sa0   --   g_U3817/A1   (AND2_X1)
+ sa0   --   g_U3816/ZN   (AND2_X1)
+ sa0   --   g_U3816/A1   (AND2_X1)
+ sa0   --   g_U3816/A2   (AND2_X1)
+ sa0   --   g_U4877/ZN   (NAND2_X1)
+ sa0   --   g_U6059/ZN   (NAND2_X1)
+ sa0   --   g_U6060/ZN   (NAND2_X1)
+ sa0   --   g_U4878/ZN   (NAND2_X1)
+ sa0   --   g_U4879/ZN   (NAND2_X1)
+ sa0   --   g_U4876/ZN   (NAND2_X1)
+ sa0   --   g_U4875/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/44_stil/187.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/44_stil/187.stil with 0 errors.
+ End reading 497 patterns, CPU_time = 0.11 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/44_fail/187.diag

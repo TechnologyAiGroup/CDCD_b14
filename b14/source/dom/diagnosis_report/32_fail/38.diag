@@ -1,0 +1,131 @@
+run_diagnosis ./tmax_fail/32_fail/38.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 39 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/32_fail/38.fail
+ #failing_pat=39, #failures=39, #defects=1, #faults=28, CPU_time=0.39
+ Simulated : #failing_pat=39, #passing_pat=96, #failures=39
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=28, #failing_pat=39, #passing_pat=96, #failures=39
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U607/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U3214/ZN   (NAND4_X1)
+ sa01   --   U3214   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U5382/ZN   (NAND2_X1)
+ sa01   --   g_U3214/A4   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U3486/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U5885/ZN   (NAND2_X1)
+ sa01   --   g_U3486/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U113/ZN   (NAND2_X1)
+ sa01   --   g_U5382/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U199/ZN   (NAND3_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U77/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U461/ZN   (NAND2_X1)
+ sa01   --   g_R1165_U77/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U461/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U3197/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U5672/ZN   (NAND2_X1)
+ sa01   --   g_U3197/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U5730/ZN   (NAND2_X1)
+ sa01   --   g_U3168/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U3168/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U3059/ZN   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U4372/ZN   (NAND2_X1)
+ sa01   --   g_U3059/A4   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U113/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U5382/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U113/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U461/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_R1165_U77/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U5672/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.50%, #explained patterns: <failing=39, passing=96>
+ sa01   DS   g_U3197/A1   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.44%, #explained patterns: <failing=38, passing=96>
+ sa1   DS   g_R1165_U199/ZN   (NAND3_X1)
+ sa0   --   g_R1165_U199/A3   (NAND3_X1)
+ sa0   --   g_R1165_U199/A1   (NAND3_X1)
+ sa0   --   g_R1165_U199/A2   (NAND3_X1)
+ sa0   --   g_R1165_U355/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U247/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U201/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=97.44%, #explained patterns: <failing=38, passing=96>
+ sa1   DS   g_R1165_U606/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U606/A1   (NAND2_X1)
+ sa0   --   g_R1165_U606/A2   (NAND2_X1)
+ sa0   --   g_R1165_U605/ZN   (NAND2_X1)
+ sa0   --   g_R1165_U604/ZN   (NAND2_X1)
+ sa1   --   g_R1165_U608/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=97.44%, #explained patterns: <failing=38, passing=96>
+ sa1   DS   g_R1165_U604/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=97.44%, #explained patterns: <failing=38, passing=96>
+ sa1   DS   g_R1165_U605/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=97.44%, #explained patterns: <failing=38, passing=96>
+ sa1   DS   g_U3168/ZN   (NAND2_X1)
+ sa0   --   g_U3168/A1   (NAND2_X1)
+ sa0   --   g_U3168/A2   (NAND2_X1)
+ sa0   --   g_U5731/ZN   (NAND2_X1)
+ sa0   --   g_U5730/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/32_stil/39.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/32_stil/39.stil with 0 errors.
+ End reading 1992 patterns, CPU_time = 0.45 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/32_fail/39.diag

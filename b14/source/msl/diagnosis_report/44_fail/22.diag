@@ -1,0 +1,34 @@
+run_diagnosis ./tmax_fail/44_fail/22.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 24 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/44_fail/22.fail
+ #failing_pat=23, #failures=24, #defects=2, #faults=4, CPU_time=0.26
+ Simulated : #failing_pat=23, #passing_pat=96, #failures=24
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=22, #passing_pat=97, #failures=22
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=22, passing=97>
+ sa0   DS   g_R1105_U85/ZN   (INV_X1)
+ sa1   --   g_R1105_U85/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=2, #passing_pat=117, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=117>
+ sa1   DS   g_U5537/ZN   (NAND2_X1)
+ sa0   --   g_U5537/A1   (NAND2_X1)
+ sa0   --   g_U5537/A2   (NAND2_X1)
+ sa1   --   g_U3082/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=2, passing=116>
+ sa1   DS   g_R395_U97/ZN   (AND3_X1)
+ sa1   --   g_R395_U183/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=2, passing=116>
+ sa0   DS   g_U3082/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/44_stil/23.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/44_stil/23.stil with 0 errors.
+ End reading 783 patterns, CPU_time = 0.21 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/44_fail/23.diag

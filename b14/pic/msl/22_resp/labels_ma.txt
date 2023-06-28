@@ -1,0 +1,3 @@
+msl-22_resp_1.bmp 0.4
+msl-22_resp_2.bmp 1.0
+msl-22_resp_all.bmp 1

@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/10_fail/66.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 67 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/10_fail/66.fail
+ #failing_pat=67, #failures=67, #defects=1, #faults=10, CPU_time=0.71
+ Simulated : #failing_pat=67, #passing_pat=96, #failures=67
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=10, #failing_pat=67, #passing_pat=96, #failures=67
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=67, passing=96>
+ sa01   DS   g_U5855/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=67, passing=96>
+ sa01   DS   g_U5855/ZN   (NAND2_X1)
+ sa01   --   g_U3474/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=97.01%, #explained patterns: <failing=65, passing=96>
+ sa1   DS   g_R1375_U114/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U102/ZN   (AND2_X1)
+ sa1   --   g_R1375_U187/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U105_tmp/ZN   (AND2_X1)
+ sa1   --   g_R1375_U105/A1   (AND4_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U114/ZN   (AND2_X1)
+ sa1   --   g_R1375_U204/A3   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U121/ZN   (AND2_X1)
+ sa1   --   g_R1375_U209/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U121/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U215/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=65, passing=95>
+ sa1   DS   g_R1375_U14/ZN   (AND4_X1)
+ sa1   --   g_R1375_U105_tmp/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/10_stil/67.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/10_stil/67.stil with 0 errors.
+ End reading 2204 patterns, CPU_time = 0.48 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/10_fail/67.diag

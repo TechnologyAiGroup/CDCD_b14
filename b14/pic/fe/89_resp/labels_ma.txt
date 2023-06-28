@@ -1,0 +1,7 @@
+fe-89_resp_1.bmp 0.25
+fe-89_resp_2.bmp 0.25
+fe-89_resp_3.bmp 0.25
+fe-89_resp_4.bmp 1.0
+fe-89_resp_5.bmp 1.0
+fe-89_resp_6.bmp 1.0
+fe-89_resp_all.bmp 1

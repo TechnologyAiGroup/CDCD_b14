@@ -1,0 +1,78 @@
+run_diagnosis ./tmax_fail/67_fail/2.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/2.fail
+ #failing_pat=3, #failures=3, #defects=1, #faults=13, CPU_time=0.70
+ Simulated : #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=13, #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa0   DS   g_R395_U109/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa0   DS   g_R395_U108/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3932/ZN   (AND2_X1)
+ sa1   --   g_U3931/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3934/ZN   (AND2_X1)
+ sa1   --   g_U3933/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3936/ZN   (AND2_X1)
+ sa1   --   g_U3935/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3938/ZN   (AND2_X1)
+ sa1   --   g_U3937/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3940/ZN   (AND2_X1)
+ sa1   --   g_U3939/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3942/ZN   (AND2_X1)
+ sa1   --   g_U3941/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3944/ZN   (AND2_X1)
+ sa1   --   g_U3943/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3946/ZN   (AND2_X1)
+ sa1   --   g_U3945/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_U3948/ZN   (AND2_X1)
+ sa1   --   g_U3947/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_R395_U180/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa1   DS   g_R395_U105/ZN   (NAND2_X1)
+ sa0   --   g_R395_U105/A1   (NAND2_X1)
+ sa0   --   g_R395_U105/A2   (NAND2_X1)
+ sa0   --   g_R395_U68/ZN   (AND3_X1)
+ sa0   --   g_R395_U68/A1   (AND3_X1)
+ sa0   --   g_R395_U68/A2   (AND3_X1)
+ sa0   --   g_R395_U68/A3   (AND3_X1)
+ sa0   --   g_R395_U67/ZN   (AND3_X1)
+ sa0   --   g_R395_U67/A1   (AND3_X1)
+ sa0   --   g_R395_U67/A2   (AND3_X1)
+ sa0   --   g_R395_U67/A3   (AND3_X1)
+ sa0   --   g_R395_U184/ZN   (NAND3_X1)
+ sa0   --   g_R395_U103/ZN   (NAND2_X1)
+ sa0   --   g_R395_U104/ZN   (NAND2_X1)
+ sa0   --   g_R395_U102/ZN   (NAND3_X1)
+ sa1   --   g_R395_U112/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/3.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/3.stil with 0 errors.
+ End reading 660 patterns, CPU_time = 0.17 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/67_fail/3.diag

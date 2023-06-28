@@ -1,0 +1,40 @@
+run_diagnosis ./tmax_fail/67_fail/1025.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1026 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/1025.fail
+ #failing_pat=1026, #failures=1026, #defects=1, #faults=1, CPU_time=0.59
+ Simulated : #failing_pat=1026, #passing_pat=96, #failures=1026
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=1026, #passing_pat=96, #failures=1026
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1026, passing=96>
+ sa1   DS   g_U3394/ZN   (NAND4_X1)
+ sa0   --   g_U3394/A2   (NAND4_X1)
+ sa0   --   g_U3394/A1   (NAND4_X1)
+ sa0   --   g_U3394/A3   (NAND4_X1)
+ sa0   --   g_U3394/A4   (NAND4_X1)
+ sa0   --   g_U4548/ZN   (NAND2_X1)
+ sa0   --   g_U4549/ZN   (NAND2_X1)
+ sa0   --   g_U3730/ZN   (AND2_X1)
+ sa0   --   g_U3730/A1   (AND2_X1)
+ sa0   --   g_U3730/A2   (AND2_X1)
+ sa0   --   g_U3732/ZN   (AND3_X1)
+ sa0   --   g_U3732/A3   (AND3_X1)
+ sa0   --   g_U3732/A2   (AND3_X1)
+ sa0   --   g_U3732/A1   (AND3_X1)
+ sa0   --   g_U4551/ZN   (NAND2_X1)
+ sa0   --   g_U4550/ZN   (NAND2_X1)
+ sa0   --   g_U3731/ZN   (AND2_X1)
+ sa0   --   g_U3731/A1   (AND2_X1)
+ sa0   --   g_U3731/A2   (AND2_X1)
+ sa0   --   g_U4554/ZN   (NAND2_X1)
+ sa0   --   g_U4555/ZN   (NAND2_X1)
+ sa0   --   g_U4553/ZN   (NAND2_X1)
+ sa0   --   g_U4552/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/1026.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/1026.stil with 0 errors.
+ End reading 2213 patterns, CPU_time = 0.50 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/67_fail/1026.diag

@@ -1,0 +1,57 @@
+run_diagnosis ./tmax_fail/42_fail/9.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 10 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/42_fail/9.fail
+ #failing_pat=10, #failures=10, #defects=1, #faults=11, CPU_time=0.12
+ Simulated : #failing_pat=10, #passing_pat=96, #failures=10
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=11, #failing_pat=10, #passing_pat=96, #failures=10
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_R1165_U69/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_U3215/ZN   (NAND3_X1)
+ sa01   --   U3215   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_R1165_U244/A2   (NAND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_R1165_U244/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_R1165_U121/A1   (AND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_U3204/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_R1165_U245/ZN   (NAND2_X1)
+ sa01   --   g_R1165_U16/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_R1165_U16/ZN   (AND2_X1)
+ sa01   --   g_U5373/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_U5373/ZN   (NAND2_X1)
+ sa01   --   g_U3919/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_U3919/ZN   (AND2_X1)
+ sa01   --   g_U3918/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=96>
+ sa01   DS   g_U3918/ZN   (AND2_X1)
+ sa01   --   g_U3215/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ../b14.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ../b14.stil with 0 errors.
+ End reading 2251 patterns, CPU_time = 0.44 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/42_fail/all.diag

@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/91_fail/71.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 72 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/91_fail/71.fail
+ #failing_pat=72, #failures=72, #defects=1, #faults=5, CPU_time=1.05
+ Simulated : #failing_pat=72, #passing_pat=96, #failures=72
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=72, #passing_pat=96, #failures=72
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=72, passing=96>
+ sa01   DS   g_U3239/ZN   (NAND2_X1)
+ sa01   --   U3239   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=72, passing=96>
+ sa01   DS   g_U5147/ZN   (NAND2_X1)
+ sa01   --   g_U3239/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=72, passing=96>
+ sa01   DS   g_U5142/ZN   (NAND3_X1)
+ sa01   --   g_U5144/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=72, passing=96>
+ sa01   DS   g_U5144/ZN   (NAND2_X1)
+ sa01   --   g_U5145/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=72, passing=96>
+ sa01   DS   g_U5145/ZN   (NAND2_X1)
+ sa01   --   g_U5147/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/91_stil/72.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/91_stil/72.stil with 0 errors.
+ End reading 1861 patterns, CPU_time = 0.41 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/91_fail/72.diag

@@ -1,0 +1,3 @@
+and-58_resp_1.bmp 0.8333333333333334
+and-58_resp_2.bmp 1.0
+and-58_resp_all.bmp 1

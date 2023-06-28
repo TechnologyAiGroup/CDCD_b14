@@ -1,0 +1,4 @@
+ssl-5_resp_1.bmp 0.75
+ssl-5_resp_2.bmp 0.75
+ssl-5_resp_3.bmp 1.0
+ssl-5_resp_all.bmp 1

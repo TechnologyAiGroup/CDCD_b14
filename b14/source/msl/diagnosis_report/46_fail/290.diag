@@ -1,0 +1,32 @@
+run_diagnosis ./tmax_fail/46_fail/290.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 324 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/46_fail/290.fail
+ #failing_pat=291, #failures=324, #defects=2, #faults=4, CPU_time=2.34
+ Simulated : #failing_pat=291, #passing_pat=96, #failures=324
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=74, #passing_pat=313, #failures=74
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=74, passing=313>
+ sa1   DS   g_U4729/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=3, #failing_pat=217, #passing_pat=170, #failures=250
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=217, passing=170>
+ sa1   DS   g_U3840/ZN   (AND3_X1)
+ sa1   --   g_U4938/A3   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=91.58%, #explained patterns: <failing=217, passing=151>
+ sa0   DS   g_U4938/ZN   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=91.58%, #explained patterns: <failing=217, passing=151>
+ sa0   DS   g_U3044/ZN   (AND2_X1)
+ sa0   --   g_U3044/A1   (AND2_X1)
+ sa0   --   g_U3044/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/46_stil/291.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/46_stil/291.stil with 0 errors.
+ End reading 2187 patterns, CPU_time = 27.09 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/46_fail/291.diag

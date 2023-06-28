@@ -1,0 +1,5 @@
+or-72_resp_1.bmp 0.25
+or-72_resp_2.bmp 0.25
+or-72_resp_3.bmp 0.25
+or-72_resp_4.bmp 1.0
+or-72_resp_all.bmp 1

@@ -1,0 +1,63 @@
+run_diagnosis ./tmax_fail/13_fail/1655.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1656 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/13_fail/1655.fail
+ #failing_pat=1656, #failures=1656, #defects=1, #faults=7, CPU_time=0.47
+ Simulated : #failing_pat=1656, #passing_pat=96, #failures=1656
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=7, #failing_pat=1656, #passing_pat=96, #failures=1656
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1656, passing=96>
+ sa01   DS   g_U6030/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1656, passing=96>
+ sa01   DS   g_U3287/ZN   (NAND2_X1)
+ sa01   --   U3287   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1656, passing=96>
+ sa01   DS   g_U3787/ZN   (AND3_X1)
+ sa01   --   g_U3287/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1656, passing=96>
+ sa01   DS   g_U3975/ZN   (AND2_X1)
+ sa01   --   g_U3787/A3   (AND3_X1)
+ ------------------------------------------------------------------------------
+ match=95.72%, #explained patterns: <failing=1656, passing=96>
+ sa01   DS   g_U3975/A1   (AND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=95.72%, #explained patterns: <failing=1656, passing=96>
+ sa01   DS   g_U3975/ZN   (AND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=95.49%, #explained patterns: <failing=1652, passing=22>
+ sa1   DS   U3287   (_PO)
+ sa1   --   g_U3287/ZN   (NAND2_X1)
+ sa0   --   g_U3287/A1   (NAND2_X1)
+ sa0   --   g_U3287/A2   (NAND2_X1)
+ sa0   --   g_U3787/ZN   (AND3_X1)
+ sa0   --   g_U3787/A3   (AND3_X1)
+ sa0   --   g_U3787/A2   (AND3_X1)
+ sa0   --   g_U3787/A1   (AND3_X1)
+ sa0   --   g_U3786/ZN   (AND3_X1)
+ sa0   --   g_U3786/A1   (AND3_X1)
+ sa0   --   g_U3786/A2   (AND3_X1)
+ sa0   --   g_U3786/A3   (AND3_X1)
+ sa0   --   g_U3975/ZN   (AND2_X1)
+ sa0   --   g_U3975/A2   (AND2_X1)
+ sa0   --   g_U3975/A1   (AND2_X1)
+ sa0   --   g_U4803/ZN   (NAND2_X1)
+ sa0   --   g_U4804/ZN   (NAND2_X1)
+ sa0   --   g_U4801/ZN   (NAND2_X1)
+ sa0   --   g_U4800/ZN   (NAND2_X1)
+ sa0   --   g_U4802/ZN   (NAND2_X1)
+ sa0   --   g_U6029/ZN   (NAND2_X1)
+ sa0   --   g_U6030/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/13_stil/1656.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/13_stil/1656.stil with 0 errors.
+ End reading 1986 patterns, CPU_time = 0.53 sec, Memory = 1MB
+set_messages -log ./diagnosis_report/13_fail/1656.diag

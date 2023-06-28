@@ -1,0 +1,9 @@
+or-63_resp_1.bmp 0.05555555555555555
+or-63_resp_2.bmp 0.4
+or-63_resp_3.bmp 0.46153846153846156
+or-63_resp_4.bmp 0.46153846153846156
+or-63_resp_5.bmp 0.46153846153846156
+or-63_resp_6.bmp 1.0
+or-63_resp_7.bmp 1.0
+or-63_resp_8.bmp 1.0
+or-63_resp_all.bmp 1
